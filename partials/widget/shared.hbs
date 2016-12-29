@@ -1,0 +1,47 @@
+<div class="sidebar-widget">
+    <ul class="tags">
+        {{#foreach tags}}
+        <li>
+            <a href="{{url}}" title="{{name}}" class="tag tag-{{id}} {{slug}}">{{name}}</a>
+        </li>
+        {{/foreach}}
+    </ul>
+    <ul class="navbar-text navbar-right">
+        <li>
+            <a href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="true"}}"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x" style="color: #00a0d1;"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x" style="color: #3b5998;"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="https://plus.google.com/share?url={{url absolute="true"}}"
+               onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+               <span class="fa-stack fa-lg">
+                   <i class="fa fa-circle fa-stack-2x" style="color: #c63d2d;"></i>
+                   <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+               </span>
+            </a>
+        </li>
+        {{!-- <li>
+            <a href="whatsapp://send" data-text="Cómo crear el botón de Compartir en WhatsApp en tu sitio:"
+                data-href="">
+               <span class="fa-stack fa-lg">
+                   <i class="fa fa-circle fa-stack-2x" style="color: #34af23;"></i>
+                   <i class="fa fa-whatsapp fa-stack-1x fa-inverse"></i>
+               </span>
+            </a>
+        </li> --}}
+    </ul>
+</div>

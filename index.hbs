@@ -1,0 +1,57 @@
+{{!< default}}
+<div class="main-container">
+	<section class="hero-slider">
+			<ul class="slides">
+				<li class="overlay">
+					<div class="background-image-holder parallax-background">
+						<img alt="Background Image" src="{{ asset "img/hero23.jpg"}}">
+					</div>
+
+					<div class="video-wrapper">
+						<video autoplay="" muted="" loop="">
+							<source src="{{ asset "video/video.webm"}}" type="video/webm">
+							<source src="{{ asset "video/video.mp4"}}" type="video/mp4">
+							<source src="{{ asset "video/video.ogv"}}" type="video/ogg">
+						</video>
+					</div>
+
+					<div class="container align-vertical">
+						<div class="row">
+							<div class="col-sm-9 col-md-8">
+								<h1 class="text-white" style="font-size: 60pt">{{@blog.title}}</h1>
+								<h3 class="text-white" style="padding:0 50px">{{@blog.description}}</h3>
+							</div>
+						</div>
+					</div><!--end of container-->
+				</li><!--end of individual slide-->
+
+				<!--end of individual slide-->
+
+			</ul>
+		</section>
+	{{!-- <header class="page-header">
+        <div class="background-image-holder parallax-background">
+            <img class="background-image" alt="Background Image" src="{{ asset "img/hero23.jpg"}}">
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<span class="text-white alt-font"></span>
+					<h1 class="text-white">{{@blog.title}}</h1>
+				</div>
+			</div><!--end of row-->
+		</div><!--end of container-->
+	</header> --}}
+	<section class="blog-masonry bg-muted">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="blog-masonry-container">{{> loop }}</div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="blog-sidebar">{{> sidebar }}</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

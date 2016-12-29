@@ -1,0 +1,10 @@
+<div class="sidebar-widget">
+    <h5>Tags</h5>
+    <ul class="tags">
+        {{#foreach tags}}
+        <li>
+            <a href="{{url}}" title="{{name}}" class="tag tag-{{id}} {{slug}}">{{name}}</a>
+        </li>
+        {{/foreach}}
+    </ul>
+</div>

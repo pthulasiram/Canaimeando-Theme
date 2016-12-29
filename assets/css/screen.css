@@ -1,0 +1,16 @@
+/*.fa-twitter {
+    background: #00a0d1;
+}
+.fa-facebook {
+    background: #3b5998;
+}
+.fa-google-plus {
+    background: #c63d2d;
+}
+.fa-whatsapp{
+    background: #34AF23;
+}*/
+
+.sidebar-widget .shared li {
+  display: inline-block;
+}

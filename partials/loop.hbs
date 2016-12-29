@@ -1,0 +1,21 @@
+{{#foreach posts}}
+<div class="col-md-6 col-sm-6 blog-masonry-item branding">
+    <div class="item-inner">
+        <a href="{{url}}">
+            {{#if image}}
+            <img data-retina="" src="{{image}}" alt="{{title}}">
+            {{else }}
+            <img data-retina="" src="{{ asset "img/no_image.jpg"}}" width="100%" alt="{{title}}">
+            {{/if}}
+        </a>
+        <div class="post-title">
+            <h2>{{title}}</h2>
+            <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
+            <div class="post-meta">
+                <span class="sub alt-font">Posted on {{date format="DD MMMM YYYY"}}</span>
+            </div>
+            <a href="{{url}}" class="link-text">Read More</a>
+        </div>
+    </div>
+</div><!--end of individual post-->
+{{/foreach}}

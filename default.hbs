@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>{{meta_title}}</title>
+        <meta name="description" content="{{meta_description}}" />
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+        <link rel="stylesheet" type="text/css" href="{{asset "css/animate.css"}}" />
+        <link rel="stylesheet" type="text/css" href="{{asset "css/flexslider.min.css"}}" />
+        <link rel="stylesheet" type="text/css" href="{{asset "css/lightbox.min.css"}}" />
+        <link rel="stylesheet" type="text/css" href="{{asset "css/bootstrap.min.css"}}" />
+        <link rel="stylesheet" type="text/css" href="{{asset "css/theme.css"}}" />
+        <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700%7CRaleway:700' rel='stylesheet' type='text/css'>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        {{!-- Ghost outputs important style and meta data with this tag --}}
+        {{ghost_head}}
+    </head>
+    <body class="{{body_class}}">
+        <div class="loader">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+        <div class="nav-container">
+            <nav class="top-bar overlay-bar">
+                <div class="container">
+                    <div class="row nav-menu">
+                        <div class="col-sm-3 col-md-2 columns">
+                            <a href="{{@blog.url}}">
+                                <img class="logo logo-light" alt="Logo" src="{{@blog.logo}}">
+                            </a>
+                        </div>
+                        <div class="col-sm-9 col-md-10 columns">
+                            {{ navigation }}
+                            {{> social }}
+                        </div>
+                    </div><!--end of row-->
+                    <div class="mobile-toggle">
+                        <i class="icon icon_menu"></i>
+                    </div>
+                </div><!--end of container-->
+            </nav>
+        </div>
+        {{{body}}}
+        {{> footer }}
+        <script src="{{ asset "js/jquery.min.js"}}"></script>
+        {{!-- Ghost outputs important scripts and data with this tag --}}
+        {{ghost_foot}}
+        <script src="{{ asset "js/modernizr-2.6.2-respond-1.1.0.min.js"}}"></script>
+        <script src="{{ asset "js/jquery.plugin.min.js"}}"></script>
+        <script src="{{ asset "js/bootstrap.min.js"}}"></script>
+        <script src="{{ asset "js/jquery.flexslider-min.js"}}"></script>
+        <script src="{{ asset "js/smooth-scroll.min.js"}}"></script>
+        <script src="{{ asset "js/skrollr.min.js"}}"></script>
+        <script src="{{ asset "js/spectragram.min.js"}}"></script>
+        <script src="{{ asset "js/scrollReveal.min.js"}}"></script>
+        <script src="{{ asset "js/isotope.min.js"}}"></script>
+        <script src="{{ asset "js/twitterFetcher_v10_min.js"}}"></script>
+        <script src="{{ asset "js/lightbox.min.js"}}"></script>
+        <script src="{{ asset "js/jquery.countdown.min.js"}}"></script>
+        <script src="{{ asset "js/scripts.js"}}"></script>
+    </body>
+</html>
