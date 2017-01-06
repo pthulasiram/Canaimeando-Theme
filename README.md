@@ -1,9 +1,10 @@
-# Canaimeando for [Ghost](https://github.com/tryghost/ghost/) by Héctor Rodríguez Velsquez
+# Tema Canaimeando para [Ghost](https://github.com/tryghost/ghost/)  
+##Héctor Rodríguez V.
 [![Ghost version](https://img.shields.io/badge/Ghost-0.11.x-brightgreen.svg?style=flat-square)](https://ghost.org/)
 [![Node version](https://img.shields.io/node/v/uno-zen.svg?style=flat-square)](https://nodejs.org/en/)
 [![Donate](https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square)](http://bit.ly/DonateMapacheGhost)
 
-> Minimalist Bootstrap Theme for [Ghost](https://github.com/tryghost/ghost/).
+> Tema minimalista realizado con Bootstrap para [Ghost](https://github.com/tryghost/ghost/).
 
 ### Tema Gratis para Ghost Blog
 
@@ -28,7 +29,6 @@ Hello, I created this theme Ghost to see how it works. It is available for free 
 - 10 Tags in the sidebar
 - Previous and next button in the Post
 - Support for comments (Facebook or Disqus)
-- Support for counter comments (Facebook or Disqus)
 - Buttons to share the article
 - Counter shared articles on Facebook
 - YouTube, Vimeo, kickstarter -> Video Responsive
